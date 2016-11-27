@@ -1,0 +1,6 @@
+logging:
+  level:
+    ROOT: INFO
+    
+server:
+  port: 9000

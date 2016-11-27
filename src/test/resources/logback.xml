@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%date{"yyyy-MM-dd HH:mm:ss,SSSXXX"} [ thread=%thread ][ level=%level ][ logger=%logger{1} ]: %message%n</pattern>
+		</encoder>
+	</appender>
+
+	<root level="DEBUG">
+		<appender-ref ref="CONSOLE" />
+	</root>
+	
+	<logger name="au.com.dius.pact.consumer.UnfilteredMockProvider" level="DEBUG" />
+</configuration>
